@@ -1,4 +1,4 @@
-# RDFTestApp
+# RDF-iOS
 Using the rdflib.js library in iOS with the Javascriptcore api
 
 This might assist others trying to integrate rdf and Solid into iOS.
