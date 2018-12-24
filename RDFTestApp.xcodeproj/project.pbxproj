@@ -17,7 +17,7 @@
 
 /* Begin PBXFileReference section */
 		4161931221CED148004E81EC /* rdfbundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = rdfbundle.js; sourceTree = "<group>"; };
-		4161931421CEE595004E81EC /* Notes.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Notes.rtf; sourceTree = "<group>"; };
+		4199326D21D181E4000E12EE /* Notes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Notes.md; sourceTree = "<group>"; };
 		41ECA73C21C8B0EB00D6C6C8 /* RDFTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RDFTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41ECA73F21C8B0EB00D6C6C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41ECA74121C8B0EB00D6C6C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,7 +49,7 @@
 		41ECA73321C8B0EB00D6C6C8 = {
 			isa = PBXGroup;
 			children = (
-				4161931421CEE595004E81EC /* Notes.rtf */,
+				4199326D21D181E4000E12EE /* Notes.md */,
 				41ECA73E21C8B0EB00D6C6C8 /* RDFTestApp */,
 				41ECA73D21C8B0EB00D6C6C8 /* Products */,
 			);
