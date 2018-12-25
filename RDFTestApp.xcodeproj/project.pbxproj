@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4161931321CED148004E81EC /* rdfbundle.js in Resources */ = {isa = PBXBuildFile; fileRef = 4161931221CED148004E81EC /* rdfbundle.js */; };
+		4199327021D299AE000E12EE /* rdfbundle.js in Resources */ = {isa = PBXBuildFile; fileRef = 4199326F21D299AE000E12EE /* rdfbundle.js */; };
 		41ECA74021C8B0EB00D6C6C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ECA73F21C8B0EB00D6C6C8 /* AppDelegate.swift */; };
 		41ECA74221C8B0EB00D6C6C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ECA74121C8B0EB00D6C6C8 /* ViewController.swift */; };
 		41ECA74521C8B0EB00D6C6C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41ECA74321C8B0EB00D6C6C8 /* Main.storyboard */; };
@@ -16,8 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4161931221CED148004E81EC /* rdfbundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = rdfbundle.js; sourceTree = "<group>"; };
 		4199326D21D181E4000E12EE /* Notes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Notes.md; sourceTree = "<group>"; };
+		4199326F21D299AE000E12EE /* rdfbundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = rdfbundle.js; sourceTree = "<group>"; };
 		41ECA73C21C8B0EB00D6C6C8 /* RDFTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RDFTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41ECA73F21C8B0EB00D6C6C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41ECA74121C8B0EB00D6C6C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,14 +38,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4199326C21D17D95000E12EE /* vendor */ = {
-			isa = PBXGroup;
-			children = (
-				4161931221CED148004E81EC /* rdfbundle.js */,
-			);
-			path = vendor;
-			sourceTree = "<group>";
-		};
 		41ECA73321C8B0EB00D6C6C8 = {
 			isa = PBXGroup;
 			children = (
@@ -66,7 +58,7 @@
 		41ECA73E21C8B0EB00D6C6C8 /* RDFTestApp */ = {
 			isa = PBXGroup;
 			children = (
-				4199326C21D17D95000E12EE /* vendor */,
+				4199326F21D299AE000E12EE /* rdfbundle.js */,
 				41ECA73F21C8B0EB00D6C6C8 /* AppDelegate.swift */,
 				41ECA74121C8B0EB00D6C6C8 /* ViewController.swift */,
 				41ECA74321C8B0EB00D6C6C8 /* Main.storyboard */,
@@ -136,8 +128,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				41ECA74A21C8B0EE00D6C6C8 /* LaunchScreen.storyboard in Resources */,
+				4199327021D299AE000E12EE /* rdfbundle.js in Resources */,
 				41ECA74721C8B0EE00D6C6C8 /* Assets.xcassets in Resources */,
-				4161931321CED148004E81EC /* rdfbundle.js in Resources */,
 				41ECA74521C8B0EB00D6C6C8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

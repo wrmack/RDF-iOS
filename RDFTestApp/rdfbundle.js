@@ -1125,6 +1125,7 @@
 }());
 
 }).call(this,require('_process'),require("timers").setImmediate)
+
 },{"_process":57,"timers":74}],2:[function(require,module,exports){
 (function (process,global,setImmediate){
 /*!
@@ -2101,6 +2102,7 @@
 
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("timers").setImmediate)
+
 },{"_process":57,"timers":74}],3:[function(require,module,exports){
 // Ignore module for browserify (see package.json)
 },{}],4:[function(require,module,exports){
@@ -10298,6 +10300,7 @@ return factory;
 })();
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("timers").setImmediate,arguments[3],arguments[4],arguments[5],arguments[6],"/node_modules/jsonld/js")
+
 },{"_process":57,"crypto":3,"es6-promise":2,"http":3,"jsonld-request":3,"pkginfo":3,"request":3,"timers":74,"util":3,"xmldom":3}],5:[function(require,module,exports){
 // Replace local require by a lazy loader
 var globalRequire = require;
@@ -10689,6 +10692,7 @@ N3Lexer.prototype = {
 module.exports = N3Lexer;
 
 }).call(this,require("timers").setImmediate)
+
 },{"timers":74}],7:[function(require,module,exports){
 // **N3Parser** parses N3 documents.
 var N3Lexer = require('./N3Lexer');
@@ -24874,6 +24878,7 @@ function objectToString(o) {
 }
 
 }).call(this,{"isBuffer":require("../../is-buffer/index.js")})
+
 },{"../../is-buffer/index.js":54}],51:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -25588,6 +25593,7 @@ function nextTick(fn, arg1, arg2, arg3) {
 
 
 }).call(this,require('_process'))
+
 },{"_process":57}],57:[function(require,module,exports){
 // shim for using process in browser
 var process = module.exports = {};
@@ -26979,6 +26985,7 @@ function indexOf(xs, x) {
   return -1;
 }
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+
 },{"./_stream_duplex":59,"./internal/streams/BufferList":64,"./internal/streams/destroy":65,"./internal/streams/stream":66,"_process":57,"core-util-is":50,"events":51,"inherits":53,"isarray":55,"process-nextick-args":56,"safe-buffer":72,"string_decoder/":67,"util":48}],62:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -27884,6 +27891,7 @@ Writable.prototype._destroy = function (err, cb) {
   cb(err);
 };
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("timers").setImmediate)
+
 },{"./_stream_duplex":59,"./internal/streams/destroy":65,"./internal/streams/stream":66,"_process":57,"core-util-is":50,"inherits":53,"process-nextick-args":56,"safe-buffer":72,"timers":74,"util-deprecate":75}],64:[function(require,module,exports){
 'use strict';
 
@@ -28629,6 +28637,7 @@ exports.clearImmediate = typeof clearImmediate === "function" ? clearImmediate :
   delete immediateIds[id];
 };
 }).call(this,require("timers").setImmediate,require("timers").clearImmediate)
+
 },{"process/browser.js":57,"timers":74}],75:[function(require,module,exports){
 (function (global){
 
@@ -28700,6 +28709,7 @@ function config (name) {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+
 },{}],76:[function(require,module,exports){
 module.exports = function isBuffer(arg) {
   return arg && typeof arg === 'object'
@@ -29297,5 +29307,7 @@ function hasOwnProperty(obj, prop) {
 }
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+
 },{"./support/isBuffer":76,"_process":57,"inherits":53}]},{},[24])(24)
 });
+//# sourceMappingURL=bundle.js.map
