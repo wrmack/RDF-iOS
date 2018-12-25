@@ -56,21 +56,31 @@ class ViewController: UIViewController {
     
     /*
      Create new RDF object in the javascript context.
+     Declare the store and VCARD variables.
+     
      Pass the code to be parsed to the Parser parse function, storing the result in 'result' variable.
      Access the 'result' variable which contains an array of quads.
      Extract subject, predicate and object values from each quad.
      */
     func testStore() {
 
-        context?.evaluateScript("var store = RDF.graph();")
-        context?.evaluateScript("var VCARD = new RDF.Namespace('http://www.w3.org/2006/vcard/ns#');")
+        context?.evaluateScript("""
+            var store = RDF.graph();
+            var VCARD = new RDF.Namespace('http://www.w3.org/2006/vcard/ns#');
+        """)
         
         print("\n==========================\nTesting adding a triple...\n==========================")
-        context?.evaluateScript("var me = store.sym('https://wrmack.inrupt.net/profile/card#me');")
-        context?.evaluateScript("var profile = me.doc();")
-        context?.evaluateScript("store.add(me, VCARD('fn'), 'Warwick McNaughton', profile);")
+        
+        context?.evaluateScript("""
+            var me = store.sym('https://wrmack.inrupt.net/profile/card#me');
+            var profile = me.doc();
+            store.add(me, VCARD('fn'), 'Warwick McNaughton', profile);
+        """)
+
+        
         print("Triple added was the vcard formatted name 'Warwick McNaughton' for the profile from https://wrmack.inrupt.net/profile/card#me")
         print("Testing finding the name using store.any():")
+        
         context?.evaluateScript("var name = store.any(me, VCARD('fn'), null, profile);")
         let foundName = context?.objectForKeyedSubscript("name")
         print("\nName found in store: \(foundName!)")
@@ -80,9 +90,12 @@ class ViewController: UIViewController {
         print("\nTriples now held in the store: \n\(storeTriples!)")
         
         print("\n================================\nTesting adding another triple...\n================================")
-        context?.evaluateScript("var bob = store.sym('https://bob.example.com/profile/card#me');")
-        context?.evaluateScript("var bobProfile = bob.doc();")
-        context?.evaluateScript("store.add(bob, VCARD('fn'), 'Bob', bobProfile);")
+        context?.evaluateScript("""
+            var bob = store.sym('https://bob.example.com/profile/card#me');
+            var bobProfile = bob.doc();
+            store.add(bob, VCARD('fn'), 'Bob', bobProfile);
+        """)
+        
          print("Triple added was the vcard formatted name 'Bob' for the profile from https://bob.example.com/profile/card#me")
 
         context?.evaluateScript("var name2 = store.any(bob, VCARD('fn'), null, bobProfile);")
@@ -94,10 +107,13 @@ class ViewController: UIViewController {
         print("\nTriples now held in the store: \n\(storeTriples!)")
         
         print("\n=======================================\nTesting adding a triple using turtle...\n=======================================")
-        context?.evaluateScript("var text = '<#this>  a  <#Example> .';")
-        context?.evaluateScript("let doc = RDF.sym('https://example.com/alice/card');")
-        context?.evaluateScript("RDF.parse(text, store, doc.uri, 'text/turtle'); ")
-        context?.evaluateScript("triples = store.toNT();")
+        context?.evaluateScript("""
+            var text = '<#this>  a  <#Example> .';
+            let doc = RDF.sym('https://example.com/alice/card');
+            RDF.parse(text, store, doc.uri, 'text/turtle');
+            triples = store.toNT();
+        """)
+            
         storeTriples = context?.objectForKeyedSubscript("triples")
         print("Triple added was parsed from '<#this>  a  <#Example> .'")
         
