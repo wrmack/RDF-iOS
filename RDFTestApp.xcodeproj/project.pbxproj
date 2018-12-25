@@ -41,7 +41,6 @@
 		41ECA73321C8B0EB00D6C6C8 = {
 			isa = PBXGroup;
 			children = (
-				4199326D21D181E4000E12EE /* Notes.md */,
 				41ECA73E21C8B0EB00D6C6C8 /* RDFTestApp */,
 				41ECA73D21C8B0EB00D6C6C8 /* Products */,
 			);
@@ -58,6 +57,7 @@
 		41ECA73E21C8B0EB00D6C6C8 /* RDFTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				4199326D21D181E4000E12EE /* Notes.md */,
 				4199326F21D299AE000E12EE /* rdfbundle.js */,
 				41ECA73F21C8B0EB00D6C6C8 /* AppDelegate.swift */,
 				41ECA74121C8B0EB00D6C6C8 /* ViewController.swift */,
