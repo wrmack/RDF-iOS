@@ -8,7 +8,7 @@ I installed the rdflib.js library from https://github.com/linkeddata/rdflib.js  
 Then bundled the library with browserify in standalone mode:
 
 ```
-browserify src/index.js --standalone RDF  > rdfbundle.j
+browserify src/index.js --standalone RDF  > rdfbundle.js
 ```
 
 Standalone mode gives you access to all exports in index.js from Swift.
