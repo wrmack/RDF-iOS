@@ -3,9 +3,9 @@ Using the rdflib.js library in iOS with the Javascriptcore api
 
 This might assist others trying to integrate rdf and Solid into iOS.
 
-I installed the rdflib.js library from https://github.com/linkeddata/rdflib.js
+I installed the rdflib.js library from https://github.com/linkeddata/rdflib.js  (using npm).
 
-Then bundled with browserify in standalone mode:
+Then bundled the library with browserify in standalone mode:
 
 ```
 browserify src/index.js --standalone RDF  > rdfbundle.j
